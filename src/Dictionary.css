@@ -26,6 +26,13 @@
   opacity: 0.8;
 }
 
+.Dictionary input:focus,
+.Dictionary textarea:focus {
+  outline: transparent;
+  border-color: #ddd;
+  box-shadow: 0 0 10px rgba(245, 245, 245, 0.5);
+}
+
 .Dictionary h1 {
   color: whitesmoke;
   font-family: "Red Hat Display", sans-serif;
