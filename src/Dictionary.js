@@ -52,7 +52,7 @@ export default function Dictionary() {
             <input
               type="search"
               onChange={handleKeywordChange}
-              defaultValue="space"
+              defaultValue={keyword}
             />
           </form>
           <div className="hint">
