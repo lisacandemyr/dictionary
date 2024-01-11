@@ -1,9 +1,114 @@
-.App-header {
+body {
+  background-color: #444e8c;
+  background-image: radial-gradient(
+      at 54% 9%,
+      hsla(221, 99%, 68%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 3% 21%, rgb(235, 122, 60) 0px, transparent 50%),
+    radial-gradient(at 9% 17%, rgb(239, 68, 44) 0px, transparent 50%),
+    radial-gradient(at 92% 95%, rgb(205, 98, 154) 0px, transparent 50%),
+    radial-gradient(at 30% 36%, rgb(205, 98, 154) 0px, transparent 50%),
+    radial-gradient(at 5% 49%, rgb(78, 75, 138) 0px, transparent 50%),
+    radial-gradient(at 26% 29%, rgb(68, 78, 140) 0px, transparent 50%);
+}
+
+.grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  transform: translateZ(0);
+  z-index: -1;
+}
+
+&::before {
+  animation: noise 1500ms steps(2) infinite;
+  background-image: url(background-noise.png);
+  content: "";
+  height: calc(100% + 20rem);
+  width: calc(100% + 20rem);
+  z-index: -1;
+  position: fixed;
+  top: -10rem;
+  left: -10rem;
+  pointer-events: none;
+  opacity: 0.13;
+  -webkit-animation: noise 1s steps(2) infinite;
+}
+
+a {
+  color: #333;
+}
+
+.App header {
   margin: 30px 0;
 }
 
-.App-logo {
+.App .logo {
   max-width: 100px;
   display: block;
   margin: 0 auto;
+}
+
+.App footer {
+  color: whitesmoke;
+  font-size: 15px;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 10px 0 30px 0;
+  opacity: 0.9;
+}
+
+.App footer a {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: all 250ms ease-in-out;
+}
+
+.App footer a:hover {
+  color: #eb7a3c;
+}
+
+@-webkit-keyframes noise {
+  to {
+    transform: translate3d(-7rem, 0, 0);
+  }
+}
+
+@keyframes noise {
+  0% {
+    transform: translate3d(0, 9rem, 0);
+  }
+  10% {
+    transform: translate3d(-1rem, -4rem, 0);
+  }
+  20% {
+    transform: translate3d(-8rem, 2rem, 0);
+  }
+  30% {
+    transform: translate3d(9rem, -9rem, 0);
+  }
+  40% {
+    transform: translate3d(-2rem, 7rem, 0);
+  }
+  50% {
+    transform: translate3d(-9rem, -4rem, 0);
+  }
+  60% {
+    transform: translate3d(2rem, 6rem, 0);
+  }
+  70% {
+    transform: translate3d(7rem, -8rem, 0);
+  }
+  80% {
+    transform: translate3d(-9rem, 1rem, 0);
+  }
+  90% {
+    transform: translate3d(6rem, -5rem, 0);
+  }
+  to {
+    transform: translate3d(-7rem, 0, 0);
+  }
 }

@@ -6,14 +6,28 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header">
-          <img src={logo} className="App-logo img-fluid" alt="logo" />
+        <header>
+          <img src={logo} className="logo img-fluid" alt="logo" />
         </header>
         <main>
           <Dictionary />
         </main>
         <footer className="text-center">
-          <small>Coded by Lisa</small>
+          <small>
+            This project is coded by <strong>Lisa Candemyr</strong>.{" "}
+            <a
+              href="https://github.com/lisacandemyr/dictionary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open-sourced on GitHub
+            </a>{" "}
+            and hosted on{" "}
+            <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">
+              Netlify
+            </a>
+            .
+          </small>
         </footer>
       </div>
     </div>

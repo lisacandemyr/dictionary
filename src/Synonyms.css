@@ -1,0 +1,13 @@
+.Synonyms {
+  margin: 20px 0;
+  padding: 0;
+}
+
+.Synonyms li {
+  color: whitesmoke;
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+  padding-right: 10px;
+}

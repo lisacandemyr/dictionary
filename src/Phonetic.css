@@ -1,0 +1,23 @@
+.Phonetic {
+  margin-bottom: 10px;
+}
+
+.Phonetic a {
+  color: whitesmoke;
+  font-size: 20px;
+  margin-right: 10px;
+  padding: 7px;
+  text-decoration: none;
+  transition: all 250ms ease-in-out;
+}
+
+.Phonetic a:hover {
+  color: #444e8c;
+}
+
+.Phonetic .text {
+  color: whitesmoke;
+  font-size: 15px;
+  font-family: "Red Hat Display", sans-serif;
+  opacity: 0.8;
+}
